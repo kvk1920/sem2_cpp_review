@@ -6,14 +6,25 @@
 #define TASK2_CALLOCATEDON_H
 
 #include "Allocators.h"
+#include "GlobalAllocatorSwitcher.h"
 
-template <typename ManagerType>
+class RuntimeHeap {
+ public:
+  static void* Alloc(size_t size) { return malloc(size); }
+  static void Free(void* ptr) { return free(ptr); }
+};
+
+class CurrentMemoryManager {
+ public:
+  static void* Alloc(size_t size) { ::operator new(size); }
+  static void Free(void* ptr) { ::operator delete(ptr); }
+};
+
+template <typename allocator_>
 class CAllocatedOn {
- private:
-  ManagerType allocator;
  public:
   inline void* operator new(size_t size) {
-    return allocator->Alloc(size);
+    return allocator_::Alloc(size);
   }
 
   inline void* operator new[](size_t size) {
@@ -23,7 +34,7 @@ class CAllocatedOn {
   inline void* operator new(size_t size, const std::nothrow_t&) noexcept {
     void* p;
     try {
-      p = allocator->Alloc(size);
+      p = allocator_::Alloc(size);
     } catch (...) { p = nullptr; }
     return p;
   }
@@ -33,9 +44,7 @@ class CAllocatedOn {
   }
 
   inline void operator delete(void* p) {
-    static Manager allocator;
-    allocator = (reinterpret_cast<AllocatorTools::DataInfo*>(p) - 1)->allocator;
-    allocator->Free(p);
+    allocator_::Free(p);
   }
 
   inline void operator delete[](void* p) {
@@ -45,8 +54,7 @@ class CAllocatedOn {
   inline void operator delete(void* p, const std::nothrow_t&) noexcept {
     static Manager allocator;
     try {
-      allocator = (reinterpret_cast<AllocatorTools::DataInfo*>(p) - 1)->allocator;
-      allocator->Free(p);
+      allocator_::Free(p);
     } catch(...) {}
   }
 

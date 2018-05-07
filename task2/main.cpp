@@ -1,12 +1,18 @@
 #include <iostream>
 #include "GlobalAllocatorSwitcher.h"
 #include "Allocators.h"
-//#include "AllocationStrategy.h"
+#include "CAllocatedOn.h"
 #include <string>
 
 struct A {
   ~A() {
     std::cout << "hmm..\n";
+  }
+};
+
+struct B : CAllocatedOn<RuntimeHeap> {
+  ~B() {
+    std::cout << "Я удалился!\n";
   }
 };
 
@@ -35,4 +41,16 @@ int main()
   y = new A[5];
   CMemoryManagerSwitcher.Switch<heap_allocator>();
   delete [] y;
+
+
+
+  B* x_ = new B;
+  CMemoryManagerSwitcher.Switch<heap_allocator>();
+  delete x_;
+  CMemoryManagerSwitcher.Switch<stack_allocator>();
+  B* y_ = new B[10];
+  delete [] y_;
+  y_ = new B[5];
+  CMemoryManagerSwitcher.Switch<heap_allocator>();
+  delete [] y_;
 }

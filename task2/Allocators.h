@@ -70,7 +70,7 @@ class HeapAllocator : public IMemoryManager {
   void freeMemory(Byte* p, size_t size) final { free(p); }
   HeapAllocator() { allocations_counter_ = 0; }
  public:
-  ~HeapAllocator() = default;
+  ~HeapAllocator() final = default;
 };
 
 template <template <typename> typename Allocator>
@@ -83,7 +83,7 @@ class AllocatorLikeStd : public IMemoryManager {
   Byte* getMemory(size_t size) final { return allocator_.allocate(size); }
   void freeMemory(Byte* p, size_t size) final { allocator_.deallocate(p, size); }
   template <typename ...Args>
-  AllocatorLikeStd(Args&& ...args) :
+  explicit AllocatorLikeStd(Args&& ...args) :
       allocator_(std::forward<Args>(args)...)
   {
     allocations_counter_ = 0;
