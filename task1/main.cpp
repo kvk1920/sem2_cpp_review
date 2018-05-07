@@ -142,6 +142,53 @@ void f8() {
   cout << "Lists are OK." << endl;
 }
 
+/**
+ * Here's a test of &&...
+ */
+/*
+struct B
+    {
+        int x;
+    B() {
+      x = 2;
+    }
+
+    ~B() { std::cout << "deleted B\n"; }
+    };
+
+struct A
+{
+  B* p;
+  A() : p(0) {}
+  A(B* p) : p(p) {}
+  ~A() { if (p) delete p; }
+  A(A&& x) : p(x.p) { x.p = 0; }
+  A(const A& x) : p(new B) { *p = *x.p; }
+  A& operator=(const A&x) {
+    if (p) delete p;
+    p = new B;
+    *p = *x.p;
+    return *this;
+  }
+  A& operator=(A&& x) {
+    if (p) delete p;
+    p = x.p;
+    x.p = 0;
+    return *this;
+  }
+};
+
+int main()
+{
+  XorList<A, StackAllocator<A>> li;
+  li.push_back(A(new B));
+}*/
+
+
+/**
+ * Here's another tests
+ */
+/*
 int main()
 {
   f1();
@@ -150,4 +197,4 @@ int main()
   f4();
   //f7();
   f8();
-}
+}*/

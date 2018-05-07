@@ -1,0 +1,3 @@
+/home/kvk1920/code/study/cpp/sem2_cpp_review/task1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kvk1920/code/study/cpp/sem2_cpp_review/task1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kvk1920/code/study/cpp/sem2_cpp_review/task1/cmake-build-debug/CMakeFiles/task1.dir

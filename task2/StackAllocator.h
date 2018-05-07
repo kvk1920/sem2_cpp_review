@@ -13,6 +13,10 @@ namespace StackAllocatorClass {
 template<typename T>
 class StackAllocator {
  public:
+  /**
+   * If we want copy StackAllocator to use the same MemoryStack, we can't do it
+   * without smart pointer.
+   */
   MemoryTools::SmartPointer<StackAllocatorUtility::Stack> pool;
 
   typedef T value_type;
@@ -41,8 +45,23 @@ class StackAllocator {
 
   void deallocate(T*, size_t) noexcept {}
 
-  template<typename U>
+  template <typename U>
   StackAllocator(const StackAllocator<U>& other) : pool(other.pool) {}
+
+  template <typename U>
+  StackAllocator& operator=(const StackAllocator<U>& other) {
+    pool = other.pool;
+    return *this;
+  }
+
+  template <typename U>
+  StackAllocator(StackAllocator<U>&& other) : pool(other.pool) {}
+
+  template <typename U>
+  StackAllocator& operator=(StackAllocator<U>&& other) {
+    pool = other.pool;
+    return *this;
+  }
 
   template<typename U, typename ...Args>
   void construct(U* p, Args&& ...args) {

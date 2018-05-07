@@ -40,6 +40,21 @@ class StackAllocator {
   template <typename U>
   StackAllocator(const StackAllocator<U>& other) : pool(other.pool) {}
 
+  template <typename U>
+  StackAllocator& operator=(const StackAllocator<U>& other) {
+    pool = other.pool;
+    return *this;
+  }
+
+  template <typename U>
+  StackAllocator(StackAllocator<U>&& other) : pool(other.pool) {}
+
+  template <typename U>
+  StackAllocator& operator=(StackAllocator<U>&& other) {
+    pool = other.pool;
+    return *this;
+  }
+
   template <typename U, typename ...Args>
   void construct(U* p, Args&& ...args) {
     new(p) U(std::forward<Args>(args)...);

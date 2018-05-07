@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kvk1920/code/study/cpp/task2/MemoryBlock.cpp" "/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/task2.dir/MemoryBlock.cpp.o"
-  "/home/kvk1920/code/study/cpp/task2/MemoryStack.cpp" "/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/task2.dir/MemoryStack.cpp.o"
-  "/home/kvk1920/code/study/cpp/task2/main.cpp" "/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/task2.dir/main.cpp.o"
+  "/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/MemoryBlock.cpp" "/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/task2.dir/MemoryBlock.cpp.o"
+  "/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/MemoryStack.cpp" "/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/task2.dir/MemoryStack.cpp.o"
+  "/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/main.cpp" "/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/task2.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -43,10 +43,10 @@ RM = /home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kvk1920/code/study/cpp/task2
+CMAKE_SOURCE_DIR = /home/kvk1920/code/study/cpp/sem2_cpp_review/task2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kvk1920/code/study/cpp/task2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/task2.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/task2.dir/flags.make
 
 CMakeFiles/task2.dir/main.cpp.o: CMakeFiles/task2.dir/flags.make
 CMakeFiles/task2.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task2.dir/main.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task2.dir/main.cpp.o -c /home/kvk1920/code/study/cpp/task2/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task2.dir/main.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task2.dir/main.cpp.o -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/main.cpp
 
 CMakeFiles/task2.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task2.dir/main.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kvk1920/code/study/cpp/task2/main.cpp > CMakeFiles/task2.dir/main.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/main.cpp > CMakeFiles/task2.dir/main.cpp.i
 
 CMakeFiles/task2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task2.dir/main.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvk1920/code/study/cpp/task2/main.cpp -o CMakeFiles/task2.dir/main.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/main.cpp -o CMakeFiles/task2.dir/main.cpp.s
 
 CMakeFiles/task2.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/task2.dir/main.cpp.o.provides.build: CMakeFiles/task2.dir/main.cpp.o
 
 CMakeFiles/task2.dir/MemoryBlock.cpp.o: CMakeFiles/task2.dir/flags.make
 CMakeFiles/task2.dir/MemoryBlock.cpp.o: ../MemoryBlock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/task2.dir/MemoryBlock.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task2.dir/MemoryBlock.cpp.o -c /home/kvk1920/code/study/cpp/task2/MemoryBlock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/task2.dir/MemoryBlock.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task2.dir/MemoryBlock.cpp.o -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/MemoryBlock.cpp
 
 CMakeFiles/task2.dir/MemoryBlock.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task2.dir/MemoryBlock.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kvk1920/code/study/cpp/task2/MemoryBlock.cpp > CMakeFiles/task2.dir/MemoryBlock.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/MemoryBlock.cpp > CMakeFiles/task2.dir/MemoryBlock.cpp.i
 
 CMakeFiles/task2.dir/MemoryBlock.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task2.dir/MemoryBlock.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvk1920/code/study/cpp/task2/MemoryBlock.cpp -o CMakeFiles/task2.dir/MemoryBlock.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/MemoryBlock.cpp -o CMakeFiles/task2.dir/MemoryBlock.cpp.s
 
 CMakeFiles/task2.dir/MemoryBlock.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/task2.dir/MemoryBlock.cpp.o.provides.build: CMakeFiles/task2.dir/Memo
 
 CMakeFiles/task2.dir/MemoryStack.cpp.o: CMakeFiles/task2.dir/flags.make
 CMakeFiles/task2.dir/MemoryStack.cpp.o: ../MemoryStack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/task2.dir/MemoryStack.cpp.o"
-	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task2.dir/MemoryStack.cpp.o -c /home/kvk1920/code/study/cpp/task2/MemoryStack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/task2.dir/MemoryStack.cpp.o"
+	/usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task2.dir/MemoryStack.cpp.o -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/MemoryStack.cpp
 
 CMakeFiles/task2.dir/MemoryStack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task2.dir/MemoryStack.cpp.i"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kvk1920/code/study/cpp/task2/MemoryStack.cpp > CMakeFiles/task2.dir/MemoryStack.cpp.i
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/MemoryStack.cpp > CMakeFiles/task2.dir/MemoryStack.cpp.i
 
 CMakeFiles/task2.dir/MemoryStack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task2.dir/MemoryStack.cpp.s"
-	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvk1920/code/study/cpp/task2/MemoryStack.cpp -o CMakeFiles/task2.dir/MemoryStack.cpp.s
+	/usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/MemoryStack.cpp -o CMakeFiles/task2.dir/MemoryStack.cpp.s
 
 CMakeFiles/task2.dir/MemoryStack.cpp.o.requires:
 
@@ -143,7 +143,7 @@ task2: CMakeFiles/task2.dir/MemoryBlock.cpp.o
 task2: CMakeFiles/task2.dir/MemoryStack.cpp.o
 task2: CMakeFiles/task2.dir/build.make
 task2: CMakeFiles/task2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable task2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable task2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/task2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -162,6 +162,6 @@ CMakeFiles/task2.dir/clean:
 .PHONY : CMakeFiles/task2.dir/clean
 
 CMakeFiles/task2.dir/depend:
-	cd /home/kvk1920/code/study/cpp/task2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kvk1920/code/study/cpp/task2 /home/kvk1920/code/study/cpp/task2 /home/kvk1920/code/study/cpp/task2/cmake-build-debug /home/kvk1920/code/study/cpp/task2/cmake-build-debug /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/task2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kvk1920/code/study/cpp/sem2_cpp_review/task2 /home/kvk1920/code/study/cpp/sem2_cpp_review/task2 /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/task2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/task2.dir/depend
 

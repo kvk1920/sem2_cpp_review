@@ -138,6 +138,7 @@ class XorList {
   explicit XorList(size_t n, const T& value = T());
   XorList(const XorList& list);
   XorList(XorList&& list) noexcept;
+  ~XorList();
 
   XorList& operator=(const XorList& list);
   XorList& operator=(XorList&& list);
@@ -191,6 +192,7 @@ XorList<T, Allocator>& XorList<T, Allocator>::operator=(XorList&& list) {
   begin_ = list.begin_;
   end_ = list.end_;
   size_ = list.size_;
+  allocator_ = std::move(list.allocator_);
   list.size_ = 0;
   list.begin_ = list.end_ = nullptr;
   return *this;
@@ -215,7 +217,8 @@ template <typename T, typename Allocator>
 XorList<T, Allocator>::XorList(XorList&& list) noexcept :
     begin_(list.begin_),
     end_(list.end_),
-    size_(list.size_) {
+    size_(list.size_),
+    allocator_(std::move(list.allocator_)) {
   list.size_ = 0;
   list.end_ = list.begin_ = nullptr;
 };
@@ -537,6 +540,11 @@ typename XorList<T, Allocator>::const_iterator XorList<T, Allocator>::cend() con
 template<typename T, typename Allocator>
 typename XorList<T, Allocator>::reverse_iterator XorList<T, Allocator>::rend() {
   return std::reverse_iterator<iterator>(begin());
+}
+
+template<typename T, typename Allocator>
+XorList<T, Allocator>::~XorList() {
+  clear();
 }
 
 }

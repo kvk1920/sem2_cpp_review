@@ -1,0 +1,1 @@
+/usr/bin/g++-7  -g   CMakeFiles/task1.dir/main.cpp.o CMakeFiles/task1.dir/MemoryBlock.cpp.o CMakeFiles/task1.dir/MemoryStack.cpp.o  -o task1 

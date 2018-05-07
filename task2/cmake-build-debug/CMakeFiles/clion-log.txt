@@ -1,4 +1,4 @@
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++-7 -G "CodeBlocks - Unix Makefiles" /home/kvk1920/code/study/cpp/task2
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/usr/bin/g++-7 -G "CodeBlocks - Unix Makefiles" /home/kvk1920/code/study/cpp/sem2_cpp_review/task2
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/kvk1920/code/study/cpp/task2/cmake-build-debug
+-- Build files have been written to: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug

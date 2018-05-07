@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/g++-7 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_e513b/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_e513b.dir/build.make CMakeFiles/cmTC_e513b.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_e513b.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_e513b.dir/testCCompiler.c.o   -c /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_e513b
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e513b.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_e513b.dir/testCCompiler.c.o  -o cmTC_e513b 
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/gmake" "cmTC_6c1ae/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_6c1ae.dir/build.make CMakeFiles/cmTC_6c1ae.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_6c1ae.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6c1ae.dir/testCCompiler.c.o   -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_6c1ae
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c1ae.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_6c1ae.dir/testCCompiler.c.o  -o cmTC_6c1ae 
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_c62b9/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_c62b9.dir/build.make CMakeFiles/cmTC_c62b9.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_c62b9.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_c62b9.dir/CMakeCCompilerABI.c.o   -c /home/kvk1920/bin/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_c62b9
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c62b9.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_c62b9.dir/CMakeCCompilerABI.c.o  -o cmTC_c62b9 
+Run Build Command:"/usr/bin/gmake" "cmTC_bda47/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_bda47.dir/build.make CMakeFiles/cmTC_bda47.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_bda47.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bda47.dir/CMakeCCompilerABI.c.o   -c /home/kvk1920/bin/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_bda47
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bda47.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_bda47.dir/CMakeCCompilerABI.c.o  -o cmTC_bda47 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/4.8/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 4.8.5 (SUSE Linux) 
 COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/4.8/:/usr/lib64/gcc/x86_64-suse-linux/4.8/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/4.8/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/bin/
 LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/4.8/:/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c62b9' '-mtune=generic' '-march=x86-64'
- /usr/lib64/gcc/x86_64-suse-linux/4.8/collect2 --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c62b9 /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/4.8/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/4.8 -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../.. CMakeFiles/cmTC_c62b9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib64/gcc/x86_64-suse-linux/4.8/crtend.o /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crtn.o
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bda47' '-mtune=generic' '-march=x86-64'
+ /usr/lib64/gcc/x86_64-suse-linux/4.8/collect2 --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_bda47 /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/4.8/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/4.8 -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../.. CMakeFiles/cmTC_bda47.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib64/gcc/x86_64-suse-linux/4.8/crtend.o /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crtn.o
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_c62b9/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_c62b9.dir/build.make CMakeFiles/cmTC_c62b9.dir/build]
-  ignore line: [gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»]
-  ignore line: [Building C object CMakeFiles/cmTC_c62b9.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_c62b9.dir/CMakeCCompilerABI.c.o   -c /home/kvk1920/bin/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_c62b9]
-  ignore line: [/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c62b9.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_c62b9.dir/CMakeCCompilerABI.c.o  -o cmTC_c62b9 ]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_bda47/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_bda47.dir/build.make CMakeFiles/cmTC_bda47.dir/build]
+  ignore line: [gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»]
+  ignore line: [Building C object CMakeFiles/cmTC_bda47.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_bda47.dir/CMakeCCompilerABI.c.o   -c /home/kvk1920/bin/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_bda47]
+  ignore line: [/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bda47.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_bda47.dir/CMakeCCompilerABI.c.o  -o cmTC_bda47 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/4.8/lto-wrapper]
@@ -85,8 +85,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.8.5 (SUSE Linux) ]
   ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/4.8/:/usr/lib64/gcc/x86_64-suse-linux/4.8/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/4.8/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/4.8/:/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c62b9' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib64/gcc/x86_64-suse-linux/4.8/collect2 --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c62b9 /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/4.8/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/4.8 -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../.. CMakeFiles/cmTC_c62b9.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib64/gcc/x86_64-suse-linux/4.8/crtend.o /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bda47' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib64/gcc/x86_64-suse-linux/4.8/collect2 --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_bda47 /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/4.8/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/4.8 -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../.. CMakeFiles/cmTC_bda47.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib64/gcc/x86_64-suse-linux/4.8/crtend.o /usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crtn.o]
     arg [/usr/lib64/gcc/x86_64-suse-linux/4.8/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -95,7 +95,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_c62b9] ==> ignore
+    arg [cmTC_bda47] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/4.8/crtbegin.o] ==> ignore
@@ -105,7 +105,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/lib] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/lib]
     arg [-L/usr/lib64/gcc/x86_64-suse-linux/4.8/../../..] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/4.8/../../..]
-    arg [CMakeFiles/cmTC_c62b9.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_bda47.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -131,17 +131,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_896eb/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_896eb.dir/build.make CMakeFiles/cmTC_896eb.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_896eb.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_896eb.dir/feature_tests.c.o   -c /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_896eb
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_896eb.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_896eb.dir/feature_tests.c.o  -o cmTC_896eb 
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/gmake" "cmTC_d1f4e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_d1f4e.dir/build.make CMakeFiles/cmTC_d1f4e.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_d1f4e.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_d1f4e.dir/feature_tests.c.o   -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_d1f4e
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1f4e.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_d1f4e.dir/feature_tests.c.o  -o cmTC_d1f4e 
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -151,17 +151,17 @@ gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_41963/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_41963.dir/build.make CMakeFiles/cmTC_41963.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_41963.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_41963.dir/feature_tests.c.o   -c /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_41963
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41963.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_41963.dir/feature_tests.c.o  -o cmTC_41963 
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/gmake" "cmTC_e7b5c/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e7b5c.dir/build.make CMakeFiles/cmTC_e7b5c.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_e7b5c.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_e7b5c.dir/feature_tests.c.o   -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e7b5c
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7b5c.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_e7b5c.dir/feature_tests.c.o  -o cmTC_e7b5c 
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -171,17 +171,17 @@ gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_15ac4/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_15ac4.dir/build.make CMakeFiles/cmTC_15ac4.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_15ac4.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_15ac4.dir/feature_tests.c.o   -c /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_15ac4
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15ac4.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_15ac4.dir/feature_tests.c.o  -o cmTC_15ac4 
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/gmake" "cmTC_8a93e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_8a93e.dir/build.make CMakeFiles/cmTC_8a93e.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_8a93e.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_8a93e.dir/feature_tests.c.o   -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_8a93e
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a93e.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_8a93e.dir/feature_tests.c.o  -o cmTC_8a93e 
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -189,30 +189,30 @@ gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_cff7c/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_cff7c.dir/build.make CMakeFiles/cmTC_cff7c.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_cff7c.dir/testCXXCompiler.cxx.o
-/usr/bin/g++-7     -o CMakeFiles/cmTC_cff7c.dir/testCXXCompiler.cxx.o -c /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_cff7c
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cff7c.dir/link.txt --verbose=1
-/usr/bin/g++-7       CMakeFiles/cmTC_cff7c.dir/testCXXCompiler.cxx.o  -o cmTC_cff7c 
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/gmake" "cmTC_fc51a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_fc51a.dir/build.make CMakeFiles/cmTC_fc51a.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_fc51a.dir/testCXXCompiler.cxx.o
+/usr/bin/g++-7     -o CMakeFiles/cmTC_fc51a.dir/testCXXCompiler.cxx.o -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_fc51a
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc51a.dir/link.txt --verbose=1
+/usr/bin/g++-7       CMakeFiles/cmTC_fc51a.dir/testCXXCompiler.cxx.o  -o cmTC_fc51a 
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_2f9bb/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_2f9bb.dir/build.make CMakeFiles/cmTC_2f9bb.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_2f9bb.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/g++-7     -o CMakeFiles/cmTC_2f9bb.dir/CMakeCXXCompilerABI.cpp.o -c /home/kvk1920/bin/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_2f9bb
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f9bb.dir/link.txt --verbose=1
-/usr/bin/g++-7      -v CMakeFiles/cmTC_2f9bb.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2f9bb 
+Run Build Command:"/usr/bin/gmake" "cmTC_f4afc/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f4afc.dir/build.make CMakeFiles/cmTC_f4afc.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_f4afc.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++-7     -o CMakeFiles/cmTC_f4afc.dir/CMakeCXXCompilerABI.cpp.o -c /home/kvk1920/bin/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_f4afc
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4afc.dir/link.txt --verbose=1
+/usr/bin/g++-7      -v CMakeFiles/cmTC_f4afc.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f4afc 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/g++-7
 COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper
@@ -223,24 +223,24 @@ Thread model: posix
 gcc version 7.2.1 20171005 [gcc-7-branch revision 253439] (SUSE Linux) 
 COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/
 LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2f9bb' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib64/gcc/x86_64-suse-linux/7/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUcHQVI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2f9bb /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/7 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/7/../../.. CMakeFiles/cmTC_2f9bb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/7/crtend.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2f9bb' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4afc' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib64/gcc/x86_64-suse-linux/7/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3UYisQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f4afc /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/7 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/7/../../.. CMakeFiles/cmTC_f4afc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/7/crtend.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4afc' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_2f9bb/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_2f9bb.dir/build.make CMakeFiles/cmTC_2f9bb.dir/build]
-  ignore line: [gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»]
-  ignore line: [Building CXX object CMakeFiles/cmTC_2f9bb.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/g++-7     -o CMakeFiles/cmTC_2f9bb.dir/CMakeCXXCompilerABI.cpp.o -c /home/kvk1920/bin/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_2f9bb]
-  ignore line: [/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f9bb.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/g++-7      -v CMakeFiles/cmTC_2f9bb.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2f9bb ]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_f4afc/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_f4afc.dir/build.make CMakeFiles/cmTC_f4afc.dir/build]
+  ignore line: [gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»]
+  ignore line: [Building CXX object CMakeFiles/cmTC_f4afc.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++-7     -o CMakeFiles/cmTC_f4afc.dir/CMakeCXXCompilerABI.cpp.o -c /home/kvk1920/bin/clion-2017.3.4/bin/cmake/share/cmake-3.9/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_f4afc]
+  ignore line: [/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4afc.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++-7      -v CMakeFiles/cmTC_f4afc.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f4afc ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/g++-7]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper]
@@ -251,13 +251,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.2.1 20171005 [gcc-7-branch revision 253439] (SUSE Linux) ]
   ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-suse-linux/7/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib/:/usr/lib64/gcc/x86_64-suse-linux/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2f9bb' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib64/gcc/x86_64-suse-linux/7/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUcHQVI.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2f9bb /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/7 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/7/../../.. CMakeFiles/cmTC_2f9bb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/7/crtend.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4afc' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib64/gcc/x86_64-suse-linux/7/collect2 -plugin /usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3UYisQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f4afc /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o -L/usr/lib64/gcc/x86_64-suse-linux/7 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib -L/usr/lib64/gcc/x86_64-suse-linux/7/../../.. CMakeFiles/cmTC_f4afc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-suse-linux/7/crtend.o /usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crtn.o]
     arg [/usr/lib64/gcc/x86_64-suse-linux/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib64/gcc/x86_64-suse-linux/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccUcHQVI.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc3UYisQ.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -270,7 +270,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_2f9bb] ==> ignore
+    arg [cmTC_f4afc] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib64/gcc/x86_64-suse-linux/7/crtbegin.o] ==> ignore
@@ -280,7 +280,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/lib]
     arg [-L/usr/lib64/gcc/x86_64-suse-linux/7/../../..] ==> dir [/usr/lib64/gcc/x86_64-suse-linux/7/../../..]
-    arg [CMakeFiles/cmTC_2f9bb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_f4afc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -304,17 +304,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_7258a/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_7258a.dir/build.make CMakeFiles/cmTC_7258a.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_7258a.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++1z -o CMakeFiles/cmTC_7258a.dir/feature_tests.cxx.o -c /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_7258a
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7258a.dir/link.txt --verbose=1
-/usr/bin/g++-7       CMakeFiles/cmTC_7258a.dir/feature_tests.cxx.o  -o cmTC_7258a 
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/gmake" "cmTC_1e419/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_1e419.dir/build.make CMakeFiles/cmTC_1e419.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_1e419.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++1z -o CMakeFiles/cmTC_1e419.dir/feature_tests.cxx.o -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_1e419
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e419.dir/link.txt --verbose=1
+/usr/bin/g++-7       CMakeFiles/cmTC_1e419.dir/feature_tests.cxx.o  -o cmTC_1e419 
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -377,17 +377,17 @@ gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_ee175/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_ee175.dir/build.make CMakeFiles/cmTC_ee175.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_ee175.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++14 -o CMakeFiles/cmTC_ee175.dir/feature_tests.cxx.o -c /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ee175
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee175.dir/link.txt --verbose=1
-/usr/bin/g++-7       CMakeFiles/cmTC_ee175.dir/feature_tests.cxx.o  -o cmTC_ee175 
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/gmake" "cmTC_bac98/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_bac98.dir/build.make CMakeFiles/cmTC_bac98.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_bac98.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++14 -o CMakeFiles/cmTC_bac98.dir/feature_tests.cxx.o -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_bac98
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bac98.dir/link.txt --verbose=1
+/usr/bin/g++-7       CMakeFiles/cmTC_bac98.dir/feature_tests.cxx.o  -o cmTC_bac98 
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -450,17 +450,17 @@ gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_5123b/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_5123b.dir/build.make CMakeFiles/cmTC_5123b.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_5123b.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++11 -o CMakeFiles/cmTC_5123b.dir/feature_tests.cxx.o -c /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5123b
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5123b.dir/link.txt --verbose=1
-/usr/bin/g++-7       CMakeFiles/cmTC_5123b.dir/feature_tests.cxx.o  -o cmTC_5123b 
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/gmake" "cmTC_3d94b/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3d94b.dir/build.make CMakeFiles/cmTC_3d94b.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_3d94b.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++11 -o CMakeFiles/cmTC_3d94b.dir/feature_tests.cxx.o -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3d94b
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d94b.dir/link.txt --verbose=1
+/usr/bin/g++-7       CMakeFiles/cmTC_3d94b.dir/feature_tests.cxx.o  -o cmTC_3d94b 
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -523,17 +523,17 @@ gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_21e24/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_21e24.dir/build.make CMakeFiles/cmTC_21e24.dir/build
-gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
-Building CXX object CMakeFiles/cmTC_21e24.dir/feature_tests.cxx.o
-/usr/bin/g++-7    -std=c++98 -o CMakeFiles/cmTC_21e24.dir/feature_tests.cxx.o -c /home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_21e24
-/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21e24.dir/link.txt --verbose=1
-/usr/bin/g++-7       CMakeFiles/cmTC_21e24.dir/feature_tests.cxx.o  -o cmTC_21e24 
-gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Run Build Command:"/usr/bin/gmake" "cmTC_12871/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_12871.dir/build.make CMakeFiles/cmTC_12871.dir/build
+gmake[1]: вход в каталог «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_12871.dir/feature_tests.cxx.o
+/usr/bin/g++-7    -std=c++98 -o CMakeFiles/cmTC_12871.dir/feature_tests.cxx.o -c /home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_12871
+/home/kvk1920/bin/clion-2017.3.4/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12871.dir/link.txt --verbose=1
+/usr/bin/g++-7       CMakeFiles/cmTC_12871.dir/feature_tests.cxx.o  -o cmTC_12871 
+gmake[1]: выход из каталога «/home/kvk1920/code/study/cpp/sem2_cpp_review/task2/cmake-build-debug/CMakeFiles/CMakeTmp»
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

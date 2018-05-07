@@ -12,6 +12,7 @@ Stack::Node::Node(size_t n) noexcept : data(n), next(nullptr) {}
 void Stack::AddMemory() noexcept {
   if (size_ == 0)
   {
+    ///If Stack is empty...
     head_ = MemoryTools::MemoryHeap::New<Node>();
     size_ = 1;
     new(head_) Node(1);
@@ -40,6 +41,7 @@ Stack::~Stack() noexcept {
 }
 
 void Stack::ClearWithoutDeleting() noexcept {
+  ///We use is when we need to move Stack
   size_ = 0;
   head_ = nullptr;
 }
