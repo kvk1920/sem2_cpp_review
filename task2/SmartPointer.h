@@ -13,13 +13,19 @@ namespace MemoryTools {
 template <typename T>
 class SmartPointer {
   /**
-   * shared_ptr doesn't enough fast.
+   * shared_ptr isn't fast enough.
    */
  private:
+  /**
+   * Here's an object and links counter.
+   */
   size_t* link_counter_;
   T* object_;
 
   void ClearWithoutDeleting() noexcept {
+    /**
+     *
+     */
     link_counter_ = nullptr;
     object_ = nullptr;
   }

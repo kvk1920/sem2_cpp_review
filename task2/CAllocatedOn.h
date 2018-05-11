@@ -52,7 +52,6 @@ class CAllocatedOn {
   }
 
   inline void operator delete(void* p, const std::nothrow_t&) noexcept {
-    static Manager allocator;
     try {
       allocator_::Free(p);
     } catch(...) {}

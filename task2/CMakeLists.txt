@@ -3,4 +3,4 @@ project(task2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(task2 main.cpp MemoryBlock.cpp MemoryBlock.h BasicMemoryTools.h MemoryStack.h MemoryStack.cpp StackAllocator.h SmartPointer.h Allocators.h GlobalAllocatorSwitcher.h CAllocatedOn.h)
+add_executable(task2 main.cpp MemoryBlock.cpp MemoryBlock.h BasicMemoryTools.h MemoryStack.h MemoryStack.cpp StackAllocator.h SmartPointer.h Allocators.h GlobalAllocatorSwitcher.h CAllocatedOn.h GlobalAllocatorSwitcher.cpp)

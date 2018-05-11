@@ -7,82 +7,58 @@
 
 #include "Allocators.h"
 
-namespace __MemoryManagerSwitcherTools {
+namespace MemoryManagerSwitcher {
 
-class __AllocatorStorage {
-  friend class __CMemoryManagerSwitcher;
-
- private:
-
-  template<typename ManagerType, typename ...Args>
-  static Manager makeManager(Args&& ...args) {
-    auto manager = reinterpret_cast<ManagerType*>(malloc(sizeof(ManagerType)));
-    new(manager) ManagerType(std::forward<Args>(args)...);
-    return manager;
-  }
-
-  static void destroyManager(Manager manager) {
-    manager->AllocatorTools::IMemoryManager::~IMemoryManager();
-    free(manager);
-  }
-
-  __AllocatorStorage() = delete;
+struct node {
+  node* previous;
+  IMemoryManager* current_allocator;
 };
 
-class __CMemoryManagerSwitcher {
-  /**
-   * Don't create another CMemoryManagerSwitcher!!!
-   */
+extern node* top_of_stack;
+
+IMemoryManager* getCurrentAllocator() {
+  if (!top_of_stack)
+    return &heap_allocator;
+  return top_of_stack->current_allocator;
+}
+
+class Switch {
  public:
-  Manager current_manager;
-  __CMemoryManagerSwitcher() {
-    current_manager = __AllocatorStorage::makeManager<heap_allocator>();
+  explicit Switch(IMemoryManager* allocator) {
+    node* stack_node = reinterpret_cast<node*>(malloc(sizeof(node)));
+    stack_node->current_allocator = allocator;
+    stack_node->previous = top_of_stack;
+    top_of_stack = stack_node;
   }
-  template <typename NextAllocator, typename ...Args>
-  void Switch(Args&& ...args) {
-    if (current_manager->isNoUsing()) {
-      __AllocatorStorage::destroyManager(current_manager);
-      current_manager = __AllocatorStorage
-      ::makeManager<NextAllocator>(std::forward<Args>(args)...);
-    }
+  ~Switch() {
+    node* old_node = top_of_stack;
+    top_of_stack = top_of_stack->previous;
+    free(old_node);
   }
-  void Check(Manager allocator) {
-    if (allocator->isNoUsing() && current_manager != allocator) {
-      __AllocatorStorage::destroyManager(allocator);
-    }
-  }
-} CMemoryManagerSwitcher;
+};
 
 }
 
-using __MemoryManagerSwitcherTools::CMemoryManagerSwitcher;
-
-
 inline void* operator new(size_t size) {
-  return CMemoryManagerSwitcher.current_manager->Alloc(size);
+  return MemoryManagerSwitcher::getCurrentAllocator()->Alloc(size);
 }
 
 inline void* operator new[](size_t size) {
-  return operator new(size);
+  return ::operator new(size);
 }
 
 inline void* operator new(size_t size, const std::nothrow_t&) noexcept {
-  void* p;
   try {
-    p = CMemoryManagerSwitcher.current_manager->Alloc(size);
-  } catch (...) { p = nullptr; }
-  return p;
+    return ::operator new(size);
+  } catch(...) {}
 }
 
 inline void* operator new[](size_t size, const std::nothrow_t&) noexcept {
-  return operator new(size, std::nothrow);
+  return ::operator new(size, std::nothrow);
 }
 
 inline void operator delete(void* p) {
-  static Manager allocator;
-  allocator = (reinterpret_cast<AllocatorTools::DataInfo*>(p) - 1)->allocator;
-  allocator->Free(p);
-  CMemoryManagerSwitcher.Check(allocator);
+  (reinterpret_cast<__DataInfo*>(p) - 1)->allocator->Free(p);
 }
 
 inline void operator delete[](void* p) {
@@ -90,16 +66,13 @@ inline void operator delete[](void* p) {
 }
 
 inline void operator delete(void* p, const std::nothrow_t&) noexcept {
-  static Manager allocator;
   try {
-    allocator = (reinterpret_cast<AllocatorTools::DataInfo*>(p) - 1)->allocator;
-    allocator->Free(p);
-    CMemoryManagerSwitcher.Check(allocator);
+    ::operator delete(p);
   } catch(...) {}
 }
 
 inline void operator delete[](void* p, const std::nothrow_t&) noexcept {
-  ::operator delete(p, std::nothrow);
+  return ::operator delete(p, std::nothrow);
 }
 
 #endif //TASK2_GLOBALALLOCATORSWITCHER_H
