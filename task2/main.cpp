@@ -4,14 +4,33 @@
 #include "CAllocatedOn.h"
 #include <string>
 
-struct _node_ : CAllocatedOn<RuntimeHeap> {
-  _node_* next;
-  IMemoryManager* allocator;
+StackAllocator stack_allocator;
+
+struct X : CAllocatedOn<RuntimeHeap> {
+  int x;
+  X() {
+    std::cout << "Создался\n";
+  }
+  ~X() {
+    std::cout << "Удалился\n";
+  }
 };
 
+X* f() {
+  MemoryManagerSwitcher::Switch(dynamic_cast<IMemoryManager*>(&stack_allocator));
+  X* t = new X;
+  return t;
+}
 
-int* [[deprecated]] get_array(size_t size) {
-  MemoryManagerSwitcher::Switch(stac)
-  int* a = new int[size];
-  return a;
+X* g(int k)
+{
+  MemoryManagerSwitcher::Switch(dynamic_cast<IMemoryManager*>(&stack_allocator));
+  return new X[10];
+}
+
+int main()
+{
+  delete f();
+  X*t =  g(10);
+  delete []t;
 }

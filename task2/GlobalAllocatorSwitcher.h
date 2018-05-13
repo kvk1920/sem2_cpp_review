@@ -14,11 +14,12 @@ struct node {
   IMemoryManager* current_allocator;
 };
 
-extern node* top_of_stack;
+static node* top_of_stack = nullptr;
 
 IMemoryManager* getCurrentAllocator() {
-  if (!top_of_stack)
+  if (!top_of_stack) {
     return &heap_allocator;
+  }
   return top_of_stack->current_allocator;
 }
 
@@ -74,5 +75,4 @@ inline void operator delete(void* p, const std::nothrow_t&) noexcept {
 inline void operator delete[](void* p, const std::nothrow_t&) noexcept {
   return ::operator delete(p, std::nothrow);
 }
-
 #endif //TASK2_GLOBALALLOCATORSWITCHER_H

@@ -177,12 +177,19 @@ struct A
     return *this;
   }
 };
-
+*/
 int main()
 {
-  XorList<A, StackAllocator<A>> li;
-  li.push_back(A(new B));
-}*/
+  XorList<int, std::allocator<int>> list;
+  for (int i(0); i < 5; ++i)
+    list.push_back(i);
+  XorList<int>::iterator it(begin(list));
+  ++it;
+  int k(5);
+  list.insert_before(it, k);
+  for (auto x : list)
+    std::cout << x;
+}
 
 
 /**

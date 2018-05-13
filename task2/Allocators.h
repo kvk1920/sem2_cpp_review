@@ -6,9 +6,7 @@
 #define TASK2_ALLOCATORS_H
 
 #include "StackAllocator.h"
-//#include "GlobalAllocatorSwitcher.h"
 #include <cstdlib>
-#include "CAllocatedOn.h"
 
 class IMemoryManager;
 
@@ -26,7 +24,7 @@ const size_t __kSizeOfData = sizeof(__DataInfo);
 
 typedef unsigned char __Byte;
 
-class IMemoryManager : public CAllocatedOn<RuntimeHeap> {
+class IMemoryManager {
  private:
   virtual __Byte* getMemory(size_t size) = 0;
   virtual void freeMemory(__Byte* p, size_t size) = 0;
@@ -51,7 +49,9 @@ class HeapAllocator : public IMemoryManager {
   void freeMemory(__Byte* p, size_t) final {
     free(p);
   }
-} heap_allocator;
+};
+
+extern HeapAllocator heap_allocator;
 
 template<template <typename> typename StdAllocator>
 class AllocatorLikeStd : public IMemoryManager {

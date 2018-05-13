@@ -374,7 +374,7 @@ typename XorList<T, Allocator>::iterator XorList<T, Allocator>::_insert_before(t
     return begin();
   } else if (it == end()) {
     push_back(std::forward<Args>(args)...);
-    return rbegin();
+    --end();
   } else {
     return iterator(it.previous_node_, _insert_between(it.previous_node_, it.current_node_, std::forward<Args>(args)...), it.current_node_);
   }
@@ -382,7 +382,7 @@ typename XorList<T, Allocator>::iterator XorList<T, Allocator>::_insert_before(t
 
 template<typename T, typename Allocator>
 typename XorList<T, Allocator>::iterator XorList<T, Allocator>::insert_before(iterator it, const T& value) {
-  _insert_before(it, value);
+  return _insert_before(it, value);
 }
 
 template<typename T, typename Allocator>
@@ -488,13 +488,14 @@ void XorList<T, Allocator>::clear() {
     Node<T>* current_node(begin_);
     Node<T>* next_node;
     while (current_node) {
+      next_node = current_node->ptr;
       if (next_node) {
-        next_node = current_node->ptr;
         next_node->ptr = Xor(next_node->ptr, current_node);
       }
       deleteNode(current_node);
       current_node = next_node;
     }
+    begin_ = end_ = nullptr;
   }
 }
 
