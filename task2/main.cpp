@@ -28,6 +28,10 @@ X* g(int k)
   return new X[10];
 }
 
+struct alignas(16) S {
+
+};
+
 int main()
 {
   delete f();
