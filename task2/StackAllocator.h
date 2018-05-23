@@ -40,7 +40,9 @@ class StackAllocator {
   }
 
   T* allocate(size_t n) noexcept {
-    return reinterpret_cast<T*>(pool->Allocate(n * sizeof(T)));
+    T* result = reinterpret_cast<T*>(pool->Allocate(n * sizeof(T)));
+    printf("Allocated %p\n", result);
+    return result;
   }
 
   void deallocate(T*, size_t) noexcept {}

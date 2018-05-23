@@ -6,7 +6,9 @@
 
 StackAllocator stack_allocator;
 
-struct X : CAllocatedOn<RuntimeHeap> {
+extern int* f_();
+
+struct X{
   int x;
   X() {
     std::cout << "Создался\n";
@@ -22,19 +24,24 @@ X* f() {
   return t;
 }
 
+void quick_exit(int __status) {}
+
 X* g(int k)
 {
-  MemoryManagerSwitcher::Switch(dynamic_cast<IMemoryManager*>(&stack_allocator));
+  MemoryManagerSwitcher::Switch switcher(dynamic_cast<IMemoryManager*>(&stack_allocator));
   return new X[10];
 }
 
-struct alignas(16) S {
+/*struct alignas(16) S {
 
-};
+};*/
 
 int main()
 {
+  MemoryManagerSwitcher::Switch Switch(/*<IMemoryManager*>(*/&stack_allocator/*)*/);
+  //int*x = f_();
+  //printf("\n%p", x);
   delete f();
-  X*t =  g(10);
-  delete []t;
+  //X*t =  g(10);
+  //delete []t;
 }

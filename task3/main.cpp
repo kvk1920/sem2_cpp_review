@@ -4,9 +4,27 @@
 #include <cassert>
 #include <functional>
 #include <algorithm>
+#include <tuple>
 
 
 #include "tuple.h"
+
+//#define MY_TEST
+
+#ifdef MY_TEST
+
+void test_tuple() {
+
+    using namespace TupleUtils;
+
+    int x;
+    std::cout << std::is_same<__remove_reference_wrapper_t<decltype(std::ref(x))>, int&>::value;
+    std::cout << std::is_same<__remove_reference_wrapper_t<decltype(std::cref(x))>, const int&>::value;
+
+
+}
+
+#else
 
 void test_tuple() {
 
@@ -75,6 +93,8 @@ void test_tuple() {
     assert(get<2>(tuple)[1] == 2);
   }
 
+
+
   {
     int test_int = 1;
     auto tuple = makeTuple(test_int, std::ref(test_int));
@@ -84,11 +104,16 @@ void test_tuple() {
   }
 
   {
-    std::vector<std::tuple<int, std::string, float>> v;
+    std::vector<Tuple<int, std::string, float>> v;
     v.emplace_back(2, "baz", -0.1);
     v.emplace_back(2, "bar", 3.14);
     v.emplace_back(1, "foo", 100.1);
+
+      //std::cerr << get<0>(v[0]) << ' ' << get<0>(v[1]) << ' ' << get<0>(v[2]) << std::endl;
+
     std::sort(v.begin(), v.end());
+
+      //std::cerr << get<0>(v[0]) << ' ' << get<0>(v[1]) << ' ' << get<0>(v[2]) << std::endl;
 
     assert(get<0>(v[0]) == 1);
     assert(get<0>(v[1]) == 2);
@@ -107,17 +132,17 @@ void test_tuple() {
     assert(get<4>(test_tuple) == 5);
   }
 
-
   for (int i = 0; i < 10000; ++i) {
     Tuple<int, std::vector<int>> tuple(4, std::vector<int>(10000, 5));
     assert(get<int>(tuple) == 4);
   }
 
 }
-
-#include <tuple>
+#endif
 
 int main() {
+    auto it = Tuple<int, int>(1, 2);
+    Tuple<int, int> tt(it);
   test_tuple();
   std::cout << 0;
   return 0;

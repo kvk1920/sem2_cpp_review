@@ -25,7 +25,7 @@ template <typename T, typename Allocator>
 class XorList;
 
 template <typename mainT, typename T>
-class Iterator : public std::iterator<std::bidirectional_iterator_tag, T, ptrdiff_t, T*, T&> {
+class Iterator : public std::iterator<std::bidirectional_iterator_tag, T/*, ptrdiff_t, T*, T&*/> {
  public:
   template <typename U, typename Allocator>
   friend class XorList;
@@ -188,19 +188,24 @@ class XorList {
 
 template<typename T, typename Allocator>
 XorList<T, Allocator>& XorList<T, Allocator>::operator=(XorList&& list) {
-  clear();
-  begin_ = list.begin_;
-  end_ = list.end_;
-  size_ = list.size_;
-  allocator_ = std::move(list.allocator_);
-  list.size_ = 0;
-  list.begin_ = list.end_ = nullptr;
+  if (&list != this) {
+    clear();
+    begin_ = list.begin_;
+    end_ = list.end_;
+    size_ = list.size_;
+    allocator_ = std::move(list.allocator_);
+    list.size_ = 0;
+    list.begin_ = list.end_ = nullptr;
+  }
   return *this;
 };
 
 template<typename T, typename Allocator>
 XorList<T, Allocator>& XorList<T, Allocator>::operator=(const XorList& list) {
-  clear;
+  if (&list == this) {
+    return *this;
+  }
+  clear();
   std::copy(list.begin(), list.end(), std::back_inserter<XorList<T, Allocator>>(*this));
   return *this;
 };
@@ -374,7 +379,7 @@ typename XorList<T, Allocator>::iterator XorList<T, Allocator>::_insert_before(t
     return begin();
   } else if (it == end()) {
     push_back(std::forward<Args>(args)...);
-    --end();
+    return --end();
   } else {
     return iterator(it.previous_node_, _insert_between(it.previous_node_, it.current_node_, std::forward<Args>(args)...), it.current_node_);
   }

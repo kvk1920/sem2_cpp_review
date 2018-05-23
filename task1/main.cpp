@@ -180,6 +180,11 @@ struct A
 */
 int main()
 {
+  f1();
+  f2();
+  f3();
+  f4();
+/*
   XorList<int, std::allocator<int>> list;
   for (int i(0); i < 5; ++i)
     list.push_back(i);
@@ -188,7 +193,7 @@ int main()
   int k(5);
   list.insert_before(it, k);
   for (auto x : list)
-    std::cout << x;
+    std::cout << x;*/
 }
 
 
